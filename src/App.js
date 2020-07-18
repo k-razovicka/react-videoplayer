@@ -22,7 +22,7 @@ function App() {
     setLoading(false);
   }, [])
 
-  const togglePlay = () => {
+  const togglePlay = () => { 
     if (isVideoPlaying) {
       videoElement.current.pause();
     } else {
@@ -31,7 +31,7 @@ function App() {
     setIsVideoPlaying(!isVideoPlaying)
   }
 
-  const toggleVolume = () => {
+  const toggleVolume = () => { 
     if (isVolume) {
       videoElement.current.muted = true;
     } else {
@@ -40,14 +40,14 @@ function App() {
     setIsVolume(!isVolume)
   }
 
-  const toggleFullScreen = () => {
+  const toggleFullScreen = () => { 
     if (!isFullScreen) {
       videoElement.current.requestFullscreen();
     }
     setIsFullScreen(isFullScreen)
   };
 
-  const timeChangeHandler = () => {
+  const timeChangeHandler = () => { 
     const videoCurrentTime = videoElement.current.currentTime
     setVideoTime(Math.round(videoCurrentTime))
   }
@@ -57,7 +57,7 @@ function App() {
     setVideoDuration(videoDuration)
   }
 
-  const volumeChangeHandler = (event) => {
+  const volumeChangeHandler = (event) => { 
     const newVolume = event.target.value / 10
     setVolume(newVolume)
 
@@ -69,10 +69,9 @@ function App() {
     videoElement.current.volume = newVolume
   };
 
-  const timeSliderChangeHandler = (event) => {
+  const timeSliderChangeHandler = (event) => { 
     const time = event.target.value
     setVideoTime(time)
-    console.log(time)
     videoElement.current.currentTime = time
   }
 
