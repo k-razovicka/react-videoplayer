@@ -1,0 +1,41 @@
+.absolute-top{
+    position: absolute;
+    top: 94%;
+}
+
+.button-play-pause, .button-volume, .button-full-screen  {
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.fa-play-icon{
+    color: #ec7e0e;
+    font-size: 21px;
+}
+
+.volume-container{
+    left: 3.5%;
+}
+
+.audio-container{
+    left: 24%;
+    width: 10%;
+}
+
+.video-time-container {
+    left: 8%;
+}
+
+.video-time {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.full-screen-container{
+    left: 95%;
+}

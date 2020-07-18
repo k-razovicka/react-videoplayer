@@ -1,0 +1,30 @@
+body {
+    background-image: url('/media/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video {
+    width: 100%;
+}
+
+.video-row{
+    margin-top: 30px;
+}
+
+.video-container {
+    position: relative;
+    background-color:#000000;
+    padding: 40px 0px !important;  
+}
+
+ .submit-button:hover {
+    cursor: pointer;
+}
+
+.video-title{
+    padding: 10px 0 !important;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}

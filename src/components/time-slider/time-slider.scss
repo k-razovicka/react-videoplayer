@@ -1,0 +1,29 @@
+.welcome-text{ //sass sintakse.var nestot
+    color:#ffffff;
+
+    &:hover{
+        color: green;
+    }
+}
+
+input[type=range] {
+    height: 2px;
+    -webkit-appearance: none;
+    width: 100%;
+    outline: none;
+
+    &:hover{
+        cursor: pointer;
+    }
+  }
+
+  input[type=range]::-moz-range-thumb {
+    height: 9px;
+    width: 9px;
+    background: #ec7e0e;
+    -webkit-appearance: none;
+
+    &:hover{
+        background:orange;
+    }
+  }
