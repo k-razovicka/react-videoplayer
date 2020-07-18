@@ -17,7 +17,6 @@ const CommentForm = () => {
         event.preventDefault()
         setComments([...comments, formData])
         setFormData({ ...initialFormData })
-        console.log(formData);
     }
 
     return (
